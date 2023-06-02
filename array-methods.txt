@@ -1,0 +1,22 @@
+Definition of an Array
+
+An array is a javascript method that is used to store information such as objects, strings, numbers, other data types and other arrays, which can be looped through as well as display the information it contains back to the user.
+
+Array Methods
+
+1. array.push()
+2. array.pop()
+3. array.splice()
+4. array.find()
+5. array.map()
+
+1. array.push()
+    This is an array method that is used to add an item to the end of an array.
+2. array.pop()
+    This is an array method that is used to remove the last item in an array.
+3. array.splice()
+    This is an array method that can be used to delete an item as well as replace an item in an array.
+4. array.find()
+    This is an array method that loops through the items in an array and returns the first item that matches the value.
+5. array.map()
+    This loops through an array and returns each item in the array with the index.

@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Palindrome</title>
 </head>
 <body>
-    
+    <h1>Palindrome Check</h1>
+    <input type="text" id="userInput" placeholder="Enter a word...">
+    <button id="checkPalindrome">Check Palindrome</button>
+    <div id="display"></div>
+
+    <script>
+        document.getElementById('checkPalindrome').addEventListener('click', ()=> {
+            let arrayedWord = userInput.value.split('')
+            let reversedWord = ''
+            for (let i = 1; i <= userInput.value.length; i++) {
+                reversedWord += arrayedWord.pop()
+            }
+            if (userInput.value == reversedWord){
+                display.innerHTML = `<h2>It is a Palindrome</h2>`
+            }
+            else {
+                display.innerHTML = `<h2>It is not a Palindrome</h2>`
+            }
+        })
+    </script>
 </body>
 </html>
